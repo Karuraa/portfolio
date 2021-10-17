@@ -1,0 +1,119 @@
+/** Bannière **/
+header{ 						
+	margin: 30px 2em 10px 2em;
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 150px;
+	background-color: #804E83	;
+	text-align: center;
+	font-family: cursive;
+}
+/** Footer **/
+footer{
+	clear: both;
+	height: 120px;
+	margin: 10px 2em 10px 2em;
+	border: 2px solid black;
+	background-color: #484848;
+
+}
+/** Taille/Type du texte dans la bannière **/
+h1{
+	font-size: 3.4rem;	
+	font-family: cursive;
+}
+/** Affichage du menu du bloc 2 **/
+.Menu{	
+	float: left;
+	border: 2px solid black;
+	height: 550px;
+	width: 20%;
+	margin: 1.5em 0px 2em 2em;
+}
+
+h4{
+	font-family: cursive;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 30px;
+}
+li{
+	border: 2px solid black;
+	width: 85%;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 5px black;
+	text-align: center;
+	background-color: blueviolet ;
+}
+/** Affichage du bloc 3 **/	
+.main{
+	width: 74%;
+	border: 1px solid black;
+	margin: 1.5em 2em 2em 0px;
+	height: 550px;
+	float: right;
+}
+/** Frame du bloc 3 **/
+.frame{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: black 1px solid;
+}
+/**Menu et Sous Menu**/
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}	
+nav li{
+	list-style-type: none;
+}
+.submenu{
+	display: none;
+}
+/** Affichage des boutons du menu **/
+nav > ul > li{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	font-family: cursive;
+}
+nav > ul > li > a{
+
+	padding: 20px 10px ;
+	color: darkblue;
+}
+/** Affichage des boutons des sous menu **/
+nav li:hover .submenu{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 102%;
+	padding: 0px;
+	transition-delay: 2s;
+}
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a{
+	font-size: 1em;
+	color: #222538;
+	width: 240px;
+
+}
+/** "Taille" de la case des boutons du sous menu **/
+nav > ul > li:hover a{
+	padding: 14px 72px 14px 30px;
+}
+body{
+	background-color: #BBC2CF;
+}
